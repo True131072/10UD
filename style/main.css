@@ -49,9 +49,13 @@ h1.title {
     top: -50px;
     opacity: 0; } }
 
+.scores-container {
+  float: right;
+  text-align: right; }
+
 .score-container, .best-container {
   position: relative;
-  float: right;
+  display: inline-block;
   background: #bbada0;
   padding: 15px 25px;
   font-size: 25px;
@@ -60,24 +64,13 @@ h1.title {
   font-weight: bold;
   border-radius: 3px;
   color: white;
-  margin-top: 8px; }
-  .score-container:after {
+  margin-top: 8px;
+  text-align: center; }
+  .score-container:after, .best-container:after {
     position: absolute;
     width: 100%;
     top: 10px;
     left: 0;
-    content: "Score";
-    text-transform: uppercase;
-    font-size: 13px;
-    line-height: 13px;
-    text-align: center;
-    color: #eee4da; }
-  .best-container:after {
-    position: absolute;
-    width: 100%;
-    top: 10px;
-    left: 0;
-    content: "Best";
     text-transform: uppercase;
     font-size: 13px;
     line-height: 13px;
@@ -96,6 +89,12 @@ h1.title {
     -moz-animation: move-up 600ms ease-in;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both; }
+
+.score-container:after {
+  content: "Score"; }
+
+.best-container:after {
+  content: "Best"; }
 
 p {
   margin-top: 0;
@@ -565,6 +564,22 @@ hr {
     font-size: 20px; }
     @media screen and (max-width: 480px) {
       .tile.tile-2048 {
+        font-size: 15px; } }
+  .tile.tile-4096 {
+    color: #f9f6f2;
+    background: #edd613;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    font-size: 20px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-4096 {
+        font-size: 15px; } }
+  .tile.tile-8192 {
+    color: #f9f6f2;
+    background: #edc511;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    font-size: 20px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-8192 {
         font-size: 15px; } }
 
 @-webkit-keyframes appear {
