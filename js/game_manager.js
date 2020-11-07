@@ -116,7 +116,7 @@ GameManager.prototype.move = function (direction) {
           self.score += merged.value;
 
           // The mighty 10UD tile
-          if (merged.value === 10UD) self.won = true;
+          if (merged.value === 10633823966279326983230456482242756608) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
