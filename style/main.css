@@ -226,7 +226,7 @@ hr {
 .tile {
   width: 53px;
   height: 53px;
-  line-height:2;
+  line-height: 53px;
  }
   .tile.tile-position-1-1 {
     position: absolute;
